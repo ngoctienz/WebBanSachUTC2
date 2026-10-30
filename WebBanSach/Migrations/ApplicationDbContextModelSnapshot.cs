@@ -17,7 +17,7 @@ namespace WebBanSach.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.12")
+                .HasAnnotation("ProductVersion", "10.0.14")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -43,7 +43,7 @@ namespace WebBanSach.Migrations
 
                     b.HasKey("Uid");
 
-                    b.ToTable("CaiDats");
+                    b.ToTable("CaiDats", (string)null);
                 });
 
             modelBuilder.Entity("WebBanSach.Models.Entities.DanhGia", b =>
@@ -71,7 +71,7 @@ namespace WebBanSach.Migrations
 
                     b.HasKey("Uid");
 
-                    b.ToTable("DanhGias");
+                    b.ToTable("DanhGias", (string)null);
 
                     b.HasData(
                         new
@@ -175,7 +175,7 @@ namespace WebBanSach.Migrations
 
                     b.HasKey("Uid");
 
-                    b.ToTable("DonDatHangs");
+                    b.ToTable("DonDatHangs", (string)null);
                 });
 
             modelBuilder.Entity("WebBanSach.Models.Entities.TacGia", b =>
@@ -197,7 +197,7 @@ namespace WebBanSach.Migrations
 
                     b.HasKey("MaTacGia");
 
-                    b.ToTable("TacGias");
+                    b.ToTable("TacGias", (string)null);
 
                     b.HasData(
                         new
@@ -235,7 +235,7 @@ namespace WebBanSach.Migrations
 
                     b.HasKey("Uid");
 
-                    b.ToTable("TaiKhoans");
+                    b.ToTable("TaiKhoans", (string)null);
                 });
 
             modelBuilder.Entity("WebBanSach.Models.Entities.ThongTinSach", b =>
@@ -288,7 +288,7 @@ namespace WebBanSach.Migrations
 
                     b.HasKey("Uid");
 
-                    b.ToTable("ThongTinSachs");
+                    b.ToTable("ThongTinSachs", (string)null);
 
                     b.HasData(
                         new
@@ -321,7 +321,7 @@ namespace WebBanSach.Migrations
 
                     b.HasKey("MaTinhTrang");
 
-                    b.ToTable("TinhTrangDonHangs");
+                    b.ToTable("TinhTrangDonHangs", (string)null);
                 });
 #pragma warning restore 612, 618
         }
